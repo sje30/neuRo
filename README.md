@@ -19,12 +19,16 @@ we can run it again if it is helpful (or quietly forget it if not...)
 
 ## Preliminaries.
 
-Install R and Rstudio.  Brief introduction to why they are useful.
-The session will work best if you can install these two programs
-before you start.  Introduction to CRAN (Comprehensive R Archive
-Network).
+Install [R](https://www.stats.bris.ac.uk/R/) and [Rstudio
+desktop](https://rstudio.com/products/rstudio/download/#download).
+Brief introduction to why they are useful.  The session will work best
+if you can install these two programs before the session so you can
+follow along.  Introduction to
+[CRAN](https://cran.r-project.org/mirrors.html )(Comprehensive R
+Archive Network).
 
-
+There will also be a folder of material to download, either from
+github or as a zip (TO FOLLOW).
 
 
 ## Case study one: analysis of calcium imaging data.
