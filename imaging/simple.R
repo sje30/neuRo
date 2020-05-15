@@ -1,4 +1,11 @@
 p = read.table('~/proj/1993-2001/web/waves2-data/r22AP5c20p1.nf', skip=1)
+xyloc = read.table("~/proj/1993-2001/web/waves2-data/r22.rp",skip=1)
+
+p = read.table('~/proj/1993-2001/web/waves/r17c.nf', skip=1)
+xyloc = read.table("~/proj/1993-2001/web/waves2-data/r22.rp",skip=1)
+
+
+
 plot(x=p[,1], y=p[,2], type='l')
 plot(x=p[,1], y=p[,3], type='l')
 abline(h=100, col='red')
@@ -48,7 +55,7 @@ lines(data[,highest_firing], col='orangered')
 lines(data[,lowest_firing], col='blue')
 legend('topright', lty=1, legend=c('Max', 'Mean', 'Min'), col=c('orangered', 'green', 'blue'))
 ## show the position of the ROIs.
-xyloc = read.table("~/proj/1993-2001/web/waves2-data/r22.rp",skip=1)
+
 
 plot(xyloc, pch=20, cex=2, col=sample(grey.colors(20), 100, replace=T))
 
@@ -97,7 +104,7 @@ y <- rnorm(length(x))
 #z <- seq(1,200,length.out=length(x))
 z <- runif(length(x), min=90, max=120)
 
-my_colour_plot <- function(x, y, z, lo=90, hi=150, ...) {
+my_colour_plot <- function(x, y, z, lo=90, hi=120, ...) {
   n = 100
   breaks = seq(from=lo, to=hi, length=n)
   cols <- heat.colors(n)[cut(z,breaks=breaks,label=F)]
