@@ -1,0 +1,12 @@
+# -*- buffer-auto-save-file-name: nil; -*-
+
+* neuRo session 1
+<2020-05-19 Tue 15:00-16:00>
+
+* neuRo session 2
+<2020-05-21 Thu 15:00-16:00>
+
+* neuRo session 3
+<2020-05-22 Fri 15:00-16:00>
+
+
