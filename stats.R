@@ -132,7 +132,7 @@ for (i in 1:100) {
   means[i] = abs( mean(sim_ctrl - sim_drug) )
   data = sample(data) # <--- New line here.
 }
-stripchart(means, method='jitter', pch=20, col="green",)
+stripchart(means, method='jitter', pch=20, col="green", main="abs diff of means")
 
 ## Q -- what is so special about means[1] ?
 abline(v=means[1], col='blue')
