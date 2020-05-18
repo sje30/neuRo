@@ -1,7 +1,6 @@
 # An introduction to R for neuroscientists
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sje30/n
-euRo/master?urlpath=rstudio)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sje30/neuRo/master?urlpath=rstudio)
 
 
 I plan to give a one-hour, rough and ready, introduction to R for
