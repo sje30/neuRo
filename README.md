@@ -34,20 +34,28 @@ There will also be a folder of material to download, either from
 github or as a zip (TO FOLLOW).
 
 
-## Case study one: analysis of calcium imaging data.
+## Acknowledgements
 
-You have some calcium imaging data reporting the simultaneous activity
-levels of a group of neurons, stored in a spreadsheet.  We will load
-the data in and interrogate the data to discover properties about the
-neurons.
+Thanks to Dr Dervila Glynn and Ms Arielle Bennett-Lovell (Cambridge
+Neuroscience).  Data for imaging experiments kindly provided by
+Professor Evelyne Sernagor (University of Newcastle).
 
-## Case study two: changes in firing rate in response to antagonists.
+
+## Case study one: changes in firing rate in response to antagonists.
 
 You have some recordings of neural activity in response to control and
 drug conditions.  Did your drug cause a significant change in firing
 rate?  Rather than rushing to perform a t-test, we will examine a
 modern computational approach, that is much more intuitive, to
 assessing the significance of firing rates.
+
+## Case study two: analysis of calcium imaging data.
+
+You have some calcium imaging data reporting the simultaneous activity
+levels of a group of neurons, stored in a spreadsheet.  We will load
+the data in and interrogate the data to discover properties about the
+neurons, writing some simple functions.
+
 
 ## Case study three: modelling action potentials.
 
@@ -57,7 +65,21 @@ Hodgkin-Huxley system.
 
 ## Next steps
 
-Where to go next to learn more about R.
+### Where to go next to learn more about R
+
+I have some [lecture notes](https://github.com/sje30/rpc2018) (that
+may be recorded over coming months).  Bioinformatics core facility in
+Downing Site often runs R courses.
+
+Many good online resources (e.g. books) including [R for Data
+Science](https://r4ds.had.co.nz/).
+
+CUP have a nice short book (although not biological enough) 
+[Braun and Murdoch](https://www.cambridge.org/core/books/first-course-in-statistical-programming-with-r/C9F088122AB40517B07FA77F2F0FDE2F).
+
+
+
+
 
 
 	
