@@ -27,7 +27,7 @@ desktop](https://rstudio.com/products/rstudio/download/#download).
 Brief introduction to why they are useful.  The session will work best
 if you can install these two programs before the session so you can
 follow along.  Introduction to
-[CRAN](https://cran.r-project.org/mirrors.html )(Comprehensive R
+[CRAN](https://cran.r-project.org/mirrors.html) (Comprehensive R
 Archive Network).
 
 There will also be a folder of material to download, either from
