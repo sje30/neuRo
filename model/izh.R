@@ -1,4 +1,4 @@
-## Izhikevich model
+## Izhikevich model --------------------------------------------------
 ## Adapted from code for Figure 1 of 2004 paper
 ## available at http://www.izhikevich.org/publications/figure1.m
 ## (SJE: copied from izh.m in cnw-2014)
