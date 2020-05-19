@@ -19,3 +19,6 @@ explains how the model is created.
 	
 
 
+## The code
+
+Run through the code in [izh.R](izh.R).
