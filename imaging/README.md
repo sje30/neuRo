@@ -14,6 +14,10 @@ We will look at some data collected from developing retinal circuits;
 in the absence of external (light) stimulation, the circuits are
 spontaneously active.  Data from Sernagor et al. (2000).
 
+The data are stored in the [data](data/) folder and the code is in
+[calcium.R](calcium.R).
+
+
 ## References
 
 Grienberger C, Konnerth A (2012) Imaging calcium in neurons. Neuron
