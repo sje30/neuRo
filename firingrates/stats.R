@@ -2,6 +2,7 @@
 ## Text following a hash (#) is a comment; good for humans; ignored by R.
 
 
+## Create some data --------------------------------------------------
 ## following are firing Rates in hertz, from control and drug condition
 ## (synthetic -- i.e. I made them up.)
 ctrl = c(3.1, 4.2, 2.9, 8.2, 4.1, 5.2, 7.1, 3.2, 4.5, 3.8)
@@ -60,9 +61,7 @@ dev.off()  ## Don't forget to switch off the most recent DEVice
 
 
 
-######################################################################
-## Okay, but are my data statistically significant?
-######################################################################
+## Are my data statistically significant? --------------------------------
 
 ## Let's reach for our friends, the t test and the non-parametric
 ## equivalent, the wilcoxon test:
@@ -82,9 +81,7 @@ wilcox.test(ctrl, drug)
 ## different.
 
 
-######################################################################
-## ---- Permutation testing
-######################################################################
+## Permutation testing -------------------------------------------------
 
 ## Who can remember exactrly how those tests work?  How about a more
 ## intuitive method?  The following is called a permutation test, and uses the
