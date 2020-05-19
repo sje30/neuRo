@@ -18,6 +18,11 @@ to change as I prepare the materials.
 I'm looking for up to ten volunteers to try out the material, and then
 we can run it again if it is helpful (or quietly forget it if not...)
 
+2020-05-19: update.  First session went well, although we only
+completed first case study.  I plan to give two more introductions
+this week to Cambridge, and then may open it up for a wider range of
+neuroscientists, once feedback from local participants is assessed.
+
 # Outline
 
 ## Preliminaries.
