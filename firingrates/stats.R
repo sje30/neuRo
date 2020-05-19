@@ -103,7 +103,7 @@ sim_drug = data[-(1:10)]
 
 mean(sim_ctrl)
 mean(sim_drug)
-diff_means = abs( mean(sim_ctrl - sim_drug) )   # calculates | <c> - <d> |
+diff_means = abs( mean(sim_ctrl) - mean(sim_drug) )   # calculates | <c> - <d> |
 
 ## so how big really is 1.77?
 
@@ -111,7 +111,7 @@ means = rep(NA, 100)  ## NA = not available, good place holder.
 for (i in 1:100) {
   sim_ctrl = data[1:10]
   sim_drug = data[-(1:10)]
-  means[i] = abs( mean(sim_ctrl - sim_drug) )
+  means[i] = abs( mean(sim_ctrl) - mean(sim_drug) )
 }
 
 ## Not quite right -- all value of means are the same!
@@ -129,7 +129,7 @@ means = rep(NA, 100)  ## NA = not available, good place holder.
 for (i in 1:100) {
   sim_ctrl = data[1:10]
   sim_drug = data[-(1:10)]
-  means[i] = abs( mean(sim_ctrl - sim_drug) )
+  means[i] = abs( mean(sim_ctrl) - mean(sim_drug) )
   data = sample(data) # <--- New line here.
 }
 stripchart(means, method='jitter', pch=20, col="green", main="abs diff of means")
