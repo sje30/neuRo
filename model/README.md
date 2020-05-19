@@ -16,7 +16,8 @@ In the following picture, one column of data is real, one is from the
 model; which is which?
 
 ![real or fake?](https://www.izhikevich.org/human_brain_simulation/rssimple.gif)
-one column is real data, one is from the model.  Which is which?
+
+## Model description and behaviour
 
 ![Model description](https://www.izhikevich.org/publications/izhik.gif)
 
