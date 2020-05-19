@@ -1,0 +1,7 @@
+Data courtesy of Evelyne Sernagor
+  cp ~/proj/1993-2001/web/waves2-data/r22AP5c20p1.nf .
+  cp ~/proj/1993-2001/web/waves2-data/r22.rp .
+  cp ~/proj/1993-2001/web/waves/r17c.nf .
+  cp ~/proj/1993-2001/web/waves2-data/r17.rp .
+  
+
