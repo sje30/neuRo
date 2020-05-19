@@ -55,6 +55,8 @@ rate?  Rather than rushing to perform a t-test, we will examine a
 modern computational approach, that is much more intuitive, to
 assessing the significance of firing rates.
 
+For more details, see the [firingrates](firingrates/README.md) folder.
+
 ## Case study two: analysis of calcium imaging data.
 
 You have some calcium imaging data reporting the simultaneous activity
@@ -62,6 +64,7 @@ levels of a group of neurons, stored in a spreadsheet.  We will load
 the data in and interrogate the data to discover properties about the
 neurons, writing some simple functions.
 
+For more details, see the [imaging](imaging/README.md) folder.
 
 ## Case study three: modelling action potentials.
 
@@ -69,6 +72,7 @@ neurons, writing some simple functions.
 a modern simplification (the Izhikevich model) to the traditional
 Hodgkin-Huxley system.
 
+For more details, see the [model](model/README.md) folder.
 ## Next steps
 
 ### Where to go next to learn more about R
