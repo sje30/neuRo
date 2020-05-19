@@ -34,6 +34,10 @@ There will also be a folder of material to download, either from
 github or as a zip (TO FOLLOW).
 
 
+If you are stuck, you can get to work "in-the-cloud" via the "launch
+binder" link at the top of this page; nothing will be installed on
+your computer.
+
 ## Acknowledgements
 
 Thanks to Dr Dervila Glynn and Ms Arielle Bennett-Lovell (Cambridge
