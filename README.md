@@ -55,7 +55,7 @@ rate?  Rather than rushing to perform a t-test, we will examine a
 modern computational approach, that is much more intuitive, to
 assessing the significance of firing rates.
 
-For more details, see the [firingrates](firingrates/README.md) folder.
+For more details, see the [firingrates](firingrates) folder.
 
 ## Case study two: analysis of calcium imaging data.
 
@@ -64,7 +64,7 @@ levels of a group of neurons, stored in a spreadsheet.  We will load
 the data in and interrogate the data to discover properties about the
 neurons, writing some simple functions.
 
-For more details, see the [imaging](imaging/README.md) folder.
+For more details, see the [imaging](imaging) folder.
 
 ## Case study three: modelling action potentials.
 
@@ -85,7 +85,12 @@ Many good online resources (e.g. books) including [R for Data
 Science](https://r4ds.had.co.nz/).
 
 CUP have a nice short book (although not biological enough) 
-[Braun and Murdoch](https://www.cambridge.org/core/books/first-course-in-statistical-programming-with-r/C9F088122AB40517B07FA77F2F0FDE2F).
+[Braun and
+Murdoch](https://www.cambridge.org/core/books/first-course-in-statistical-programming-with-r/C9F088122AB40517B07FA77F2F0FDE2F).
+There is also a fab new book 
+[Modern statistics for Modern
+Biology](http://web.stanford.edu/class/bios221/book/introduction.html)
+that is available from CUP, but also free online.
 
 
 
