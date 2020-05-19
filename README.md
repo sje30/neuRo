@@ -3,6 +3,9 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sje30/neuRo/master?urlpath=rstudio)
 
 
+
+![Regions of interest image](imaging/rois.png)
+
 I plan to give a one-hour, rough and ready, introduction to R for
 Neuroscientists over Zoom.  R is very popular programming language
 within some discplines (e.g. computational biology).  It is however
