@@ -30,8 +30,13 @@ follow along.  Introduction to
 [CRAN](https://cran.r-project.org/mirrors.html) (Comprehensive R
 Archive Network).
 
-There will also be a folder of material to download, either from
+##There will also be a folder of material to download, either from
 github or as a zip (TO FOLLOW).
+
+Grab the folder of materials from
+[master.zip](https://github.com/sje30/neuRo/archive/master.zip) and
+unpack it to find a folder called "neuRo-master".  We will be working
+in there.
 
 
 If you are stuck, you can get to work "in-the-cloud" via the "launch
