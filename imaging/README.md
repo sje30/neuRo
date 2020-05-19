@@ -12,7 +12,7 @@ Figure (7) taken from Grienberger and Konnerth (2012).
 ## Spontaneous activity
 We will look at some data collected from developing retinal circuits;
 in the absence of external (light) stimulation, the circuits are
-spontaneously active.  Data from (Sernagor et al. 2000).
+spontaneously active.  Data from Sernagor et al. (2000).
 
 ## References
 
