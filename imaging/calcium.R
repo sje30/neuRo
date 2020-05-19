@@ -1,4 +1,5 @@
 
+## Set up working directory ----------------------------------------------
 ## For this to work, make sure you are in the same directory as this
 ## script.  Goto "Session" menu --> "Set Working Directory" -->
 ## "To Source File Location".
@@ -6,11 +7,12 @@
 p = read.table('data/r22AP5c20p1.nf', skip=1)
 xyloc = read.table("data/r22.rp",skip=1)
 
+dim(xyloc)
+dim(p)
 
 ## This is a second dataset that we can examine later.
 ## p = read.table('data/r17c.nf', skip=1)
 ## xyloc = read.table("data/r22.rp",skip=1)
-
 
 
 plot(x=p[,1], y=p[,2], type='l', main='ROI 1')
@@ -23,20 +25,21 @@ mode(p)
 ## Let's make the data into a matrix, where the rows are time, and the columns
 ## are the ROIs.
 
-## remove the first column, as that has the frame number.
+## Remove the first column, as that has the frame number.
 data = as.matrix(p[,-1])
+dim(data)
 
 ##rotate <- function(x) t(apply(x, 2, rev))
 ##image( rotate(data), ylab='time (frames)', xlab='ROI')
 
 require(lattice)
 levelplot(data, xlab='Frame number', ylab='Region of Interest')
-x2 = smooth(p[,3])
-plot(x=p[,1], y=p[,3], type='l')
-lines(x=p[,1], y=expsmooth( p[,3], alpha=0.2), type='l', col='blue')
 
-apply(data, 1, max)
+## TODO - fix origin so time runs from top to bottom.
 
+## Find extreme responses --------------------------------------------------
+## Now that our data is in a matrix, we can do things like taking the
+## average across each column
 mean_trace = apply(data, 1, mean)
 
 plot(mean_trace, type='l')
@@ -59,8 +62,13 @@ points(lowest_firing, max_of_each_roi[lowest_firing], col='blue', cex=3, pch='0'
 plot(mean_trace, type='l', col='green', ylim=c(80,170))
 lines(data[,highest_firing], col='orangered')
 lines(data[,lowest_firing], col='blue')
-legend('topright', lty=1, legend=c('Max', 'Mean', 'Min'), col=c('orangered', 'green', 'blue'))
+legend('topright', lty=1,
+       legend=c('Max', 'Mean', 'Min'),
+       col=c('orangered', 'green', 'blue'))
 
+
+## Exponential smoothing --------------------------------------------------
+## Define our own function to smooth data.
 
 expsmooth <- function(x, alpha=0.3) {
   ## https://www.itl.nist.gov/div898/software/dataplot/refman2/auxillar/exposmoo.htm
@@ -101,8 +109,7 @@ title(main="Smoothed version of traces")
 
 
 
-######################################################################
-## Now lets look at the x,y data
+## Examine x,y data ----------------------------------------------------
 
 plot(xyloc[,1], xyloc[,2], asp=1, pch='+', main="location of each ROI")
 
@@ -126,13 +133,15 @@ my_colour_plot(x=xyloc[,1], y=xyloc[,2], z=max_of_each_roi,
                lo=100, hi=160,
                main='max activation of each ROI')
 
-for (p in 1:nrow(data)) {
-  plot = my_colour_plot(xyloc[,1], xyloc[,2], data[p,], main=as.character(p))
+for (frame in 1:nrow(data)) {
+  plot = my_colour_plot(xyloc[,1], xyloc[,2], data[frame,],
+                        main=as.character(frame))
   print(plot)
+  Sys.sleep(0.1) #needed for Rstudio to keep up with graphics
 }
 
 
-## Exercises:
+## Exercises -----------------------------------------------------------
 ## 
 ## 1. Try the second data file -- what is different?
 ##
