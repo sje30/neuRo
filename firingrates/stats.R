@@ -59,7 +59,9 @@ boxplot(x=list(Control=ctrl, Drug=drug),
 
 dev.off()  ## Don't forget to switch off the most recent DEVice
 
-
+## Where did my file get stored?
+getwd()
+## Or change the working directory using Sessions menu, setwd()
 
 ## Are my data statistically significant? --------------------------------
 
@@ -68,7 +70,7 @@ dev.off()  ## Don't forget to switch off the most recent DEVice
 
 
 ## should first check that my data are normal -- the control data look
-## a bit skeweed by checking the box plot.
+## a bit skewed by checking the box plot.
 
 shapiro.test(ctrl)
 shapiro.test(drug)
